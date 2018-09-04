@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci finder</title>
+</head>
+<body>
+
+    <h1>Знайдення n-ного числа і ряду Фібоначчі</h1>
+    <p>Ряд Фібоначчі: <b> 1, 1, 2, 3, 5, 8, 13...</b></p>
+    
+    <span>Обчислення в циклі</span>
+        <form name="cycleinput">
+            <input type="text" id="fibcyc" value="" size="6 ">
+            <button onclick="fib(n)">Обчислити </button>
+            </form>
+        <span>Відповідь: <div id="answercyc"></div></span>
+    
+    <br>
+    
+    <span>Обчислення рекурсивно</span>
+        <form name="recursiveinput">
+            <input type="text" id="fibrecurs" value="" size="6 ">
+            <input type="button" value="Знайти" onclick="fib()" />
+        </form>
+        <span>Відповідь: <div id="answerrec"></div></span>
+    
+    <br>
+    
+    <span>Обчислення із збереженням значень до массиву</span>
+        <form name="numberone">
+            <input type="text" id="fibmas" value="" size="6">
+            <input type="button" value="Знайти" onclick="fib()" />
+        </form> 
+        <span>Відповідь: <div id="answermas"></div></span>
+    <br>
+<script src="js/index.js"></script>
+
+</body>
+</html>
+
