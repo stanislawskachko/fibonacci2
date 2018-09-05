@@ -1,12 +1,11 @@
 //Код для обчислення в циклі
 function getData() {
-    let n = +document.getElementById("fibcyc").value;
+    let n = parseInt(document.getElementById("fibcyc").value);
     if (isNaN(n)) {
         document.getElementById("answercyc").innerHTML = 'Помилка - введіть число';
     } else {
-        function fib(n) {
-            let a = 1
-              , b = 1;
+        function fibCyc(n) {
+            let a = 1, b = 1;
             for (i = 3; i <= n; i++) {
                 c = a + b;
                 a = b;
@@ -14,30 +13,30 @@ function getData() {
             }
             return b;
         }
-        document.getElementById("answercyc").innerHTML = 'Число ' + n + ' ряду Фібоначчі рівне ' + fib(n);
+        document.getElementById("answercyc").innerHTML = 'Число ' + n + ' ряду Фібоначчі рівне ' + fibCyc(n);
     }
 }
 
 //Код для обчислення рекурсивно
 function getDataRec() {
-    let m = +document.getElementById("fibrecurs").value;
+    let m = parseInt(document.getElementById("fibrecurs").value);
     if (isNaN(m)) {
         document.getElementById("answerrec").innerHTML = 'Помилка - введіть число';
     } else {
-        function fibrec(m) {
+        function fibRec(m) {
             if (m <= 2) {
                 return 1;
             } else {
-                return fibrec(m - 2) + fibrec(m - 1);
+                return fibRec(m - 2) + fibRec(m - 1);
             }
         }
-        document.getElementById("answerrec").innerHTML = 'Число ' + m + ' ряду Фібоначчі рівне ' + fibrec(m);
+        document.getElementById("answerrec").innerHTML = 'Число ' + m + ' ряду Фібоначчі рівне ' + fibRec(m);
     }
 }
 
 //Код для обчислення масивом
 function getDataMas() {
-    let k = +document.getElementById("fibmas").value;
+    let k = parseInt(document.getElementById("fibmas").value);
     if (isNaN(k)) {
         document.getElementById("answermas").innerHTML = 'Помилка - введіть число';
     } else {
