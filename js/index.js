@@ -34,3 +34,22 @@ function getDataRec() {
         document.getElementById("answerrec").innerHTML = 'Число ' + m + ' ряду Фібоначчі рівне ' + fibrec(m);
     }
 }
+
+//Код для обчислення масивом
+function getDataMas() {
+    let k = +document.getElementById("fibmas").value;
+    if (isNaN(k)) {
+        document.getElementById("answermas").innerHTML = 'Помилка - введіть число';
+    } else {
+        function fibMas(k) {
+            let arr = [0, 1];
+            for (let i = 2; i <= k + 1; i++) {
+                arr.push(arr[i - 2] + arr[i - 1]);
+            }
+            return arr[k];
+        }
+
+        document.getElementById("answermas").innerHTML = 'Число ' + k + ' ряду Фібоначчі рівне ' + fibMas(k);
+    }
+
+}
