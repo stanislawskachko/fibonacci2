@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fibonacci finder</title>
-</head>
-<body>
-
-    <h1>Знайдення n-ного числа ряду Фібоначчі</h1>
-    <p>Ряд Фібоначчі: <b> 1, 1, 2, 3, 5, 8, 13...</b></p>
-    
-    <span>Обчислення в циклі</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fibonacci finder</title>
+    </head>
+    <body>
+        <h1>Знайдення n-ного числа ряду Фібоначчі</h1>
+        <p>
+            Ряд Фібоначчі: <b>1, 1, 2, 3, 5, 8, 13...</b>
+        </p>
+        <span>Обчислення в циклі</span>
         <form name="cycleinput">
             <input type="text" id="fibcyc" value="" size="6 ">
-            <input type="button" value="Знайти" onclick="getData()" />
+            <input type="button" value="Знайти" onclick="getData()"/>
         </form>
-        <span>Відповідь: <div id="answercyc"></div></span>
-    <br>
-    
-    <span>Обчислення рекурсивно (не більше 40) </span>
+        <span>
+            Відповідь: <div id="answercyc"></div>
+        </span>
+        <br>
+        <span>Обчислення рекурсивно (не більше 40) </span>
         <form name="recursiveinput">
             <input type="text" id="fibrecurs" value="" size="6 ">
-            <input type="button" value="Знайти" onclick="getDataRec()" />
+            <input type="button" value="Знайти" onclick="getDataRec()"/>
         </form>
-        <span>Відповідь: <div id="answerrec"></div></span>
-
-<script src="js/index.js"></script>
-
-</body>
+        <span>
+            Відповідь: <div id="answerrec"></div>
+        </span>
+        <script src="js/index.js"></script>
+    </body>
 </html>
-
