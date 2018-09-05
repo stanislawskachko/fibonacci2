@@ -5,7 +5,6 @@ function getData() {
         document.getElementById("answercyc").innerHTML = 'Помилка - введіть число';
     } else {
         function fib(n) {
-            let answer;
             let a = 1
               , b = 1;
             for (i = 3; i <= n; i++) {
@@ -14,7 +13,6 @@ function getData() {
                 b = c;
             }
             return b;
-            return answer;
         }
         document.getElementById("answercyc").innerHTML = 'Число ' + n + ' ряду Фібоначчі рівне ' + fib(n);
     }
